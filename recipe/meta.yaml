@@ -1,5 +1,5 @@
 {% set name = "pyOMA-2" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0b1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyoma_2-{{ version }}.tar.gz
-  sha256: d743a36862f806e4fa1f1860d012fc07556e4b9c7352de042062d6fee6607c5e
+  sha256: 3a62f0ba62b63bbf2a7d015e20d6c98ee068aa99d1112ea4f334abcbc2e8865e
 
 build:
   noarch: python
@@ -31,12 +31,15 @@ requirements:
     - pyvistaqt
     - pyqt
     - vtk
+    - pyqt5-sip
+    - openpyxl
 
 test:
   imports:
     - pyoma2
-  commands:
-    - pip check
+  # # need to commend because pyqt5 in pypi is called pyqt in conda
+  # commands:
+  #   - pip check
   requires:
     - pip
     - python {{ python_min }}

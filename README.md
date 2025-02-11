@@ -38,14 +38,14 @@ Current release info
 Installing pyoma-2
 ==================
 
-Installing `pyoma-2` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `pyoma-2` from the `conda-forge/label/pyoma-2_dev` channel can be achieved by adding `conda-forge/label/pyoma-2_dev` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/pyoma-2_dev
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pyoma-2` can be installed with `conda`:
+Once the `conda-forge/label/pyoma-2_dev` channel has been enabled, `pyoma-2` can be installed with `conda`:
 
 ```
 conda install pyoma-2
@@ -60,26 +60,26 @@ mamba install pyoma-2
 It is possible to list all of the versions of `pyoma-2` available on your platform with `conda`:
 
 ```
-conda search pyoma-2 --channel conda-forge
+conda search pyoma-2 --channel conda-forge/label/pyoma-2_dev
 ```
 
 or with `mamba`:
 
 ```
-mamba search pyoma-2 --channel conda-forge
+mamba search pyoma-2 --channel conda-forge/label/pyoma-2_dev
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search pyoma-2 --channel conda-forge
+mamba repoquery search pyoma-2 --channel conda-forge/label/pyoma-2_dev
 
 # List packages depending on `pyoma-2`:
-mamba repoquery whoneeds pyoma-2 --channel conda-forge
+mamba repoquery whoneeds pyoma-2 --channel conda-forge/label/pyoma-2_dev
 
 # List dependencies of `pyoma-2`:
-mamba repoquery depends pyoma-2 --channel conda-forge
+mamba repoquery depends pyoma-2 --channel conda-forge/label/pyoma-2_dev
 ```
 
 
