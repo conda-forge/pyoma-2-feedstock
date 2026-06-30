@@ -1,5 +1,5 @@
 {% set name = "pyOMA-2" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyoma_2-{{ version }}.tar.gz
-  sha256: 04bb690c3bb8c94606f75b568efb6291b72cb61dcabc6b6b9ac7c1698b27c6ba
+  sha256: e64b11d658d290aea10f4bed80dacf0c2df233b3cd725512a2c8445d05ef94a5
 
 build:
   noarch: python
